@@ -3,7 +3,7 @@ Build, debug, and profile code in an Ubuntu container
 
 ## Repo layout
 
-Each branch in this repo is set to autobuild over on Dockerhub as a tag. To add/update something, `git checkout` the branch name, commit and push it. Dockerhub should take care of the rest. Here are the current branch names, ubuntu codenames, and default versions of GCC that are in each build:
+Each branch in this repo is set to autobuild over on [Dockerhub as a tag](https://hub.docker.com/r/dunnlab/ubuntu-dev/tags). To add/update something, `git checkout` the branch name, commit and push it. Dockerhub should take care of the rest. Here are the current branch names, ubuntu codenames, and default versions of GCC that are in each build:
 
 | Branch | Ubuntu Codename | GCC Version |
 |--------|-----------------|-------------|
