@@ -8,15 +8,17 @@ ENV TZ="America/New_York"
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-## preesed tzdata, update package index, upgrade packages and install needed software
 RUN apt-get update \
  && apt-get install -y  build-essential \
                         ca-certificates \
+                        cmake \
                         curl \
                         gdb \
                         git \
+                        google-perftools \
+                        openjdk-8-jdk \
+                        libboost-all-dev \
                         unzip \
                         valgrind \
                         vim \
                         wget
-
